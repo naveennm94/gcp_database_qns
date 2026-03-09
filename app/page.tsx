@@ -61,7 +61,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className='font-bold text-gray-900 mb-2'>30 Questions</h3>
+                <h3 className='font-bold text-gray-900 mb-2'>40 Questions</h3>
                 <p className='text-gray-600 text-sm'>
                   Comprehensive coverage of all exam topics
                 </p>

@@ -706,4 +706,210 @@ export const examQuestions: Question[] = [
     correctAnswer: 'C',
     communityVote: 'C (100%)',
   },
+  {
+    id: 31,
+    question:
+      'You are managing a mission-critical Cloud SQL for PostgreSQL instance. Your application team is running important transactions on the database when another DBA starts an on-demand backup. You want to verify the status of the backup. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Check the cloudsql.googleapis.com/postgres.log instance log.',
+      },
+      { label: 'B', text: 'Perform the gcloud sql operations list command.' },
+      { label: 'C', text: 'Use Cloud Audit Logs to verify the status.' },
+      { label: 'D', text: 'Use the Google Cloud Console.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (85%)',
+  },
+  {
+    id: 32,
+    question:
+      'You support a consumer inventory application that runs on a multi-region instance of Cloud Spanner. A customer opened a support ticket to complain about slow response times. You notice a Cloud Monitoring alert about high CPU utilization. You want to follow Google-recommended practices to address the CPU performance issue. What should you do first?',
+    options: [
+      { label: 'A', text: 'Increase the number of processing units.' },
+      {
+        label: 'B',
+        text: 'Modify the database schema, and add additional indexes.',
+      },
+      {
+        label: 'C',
+        text: 'Shard data required by the application into multiple instances.',
+      },
+      { label: 'D', text: 'Decrease the number of processing units.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (90%)',
+  },
+  {
+    id: 33,
+    question:
+      'Your company uses Bigtable for a user-facing application that displays a low-latency real-time dashboard. You need to recommend the optimal storage type for this read-intensive database. What should you do?',
+    options: [
+      { label: 'A', text: 'Recommend solid-state drives (SSD).' },
+      {
+        label: 'B',
+        text: 'Recommend splitting the Bigtable instance into two instances in order to load balance the concurrent reads.',
+      },
+      { label: 'C', text: 'Recommend hard disk drives (HDD).' },
+      { label: 'D', text: 'Recommend mixed storage types.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 34,
+    question:
+      'Your organization has a critical business app that is running with a Cloud SQL for MySQL backend database. Your company wants to build the most fault-tolerant and highly available solution possible. You need to ensure that the application database can survive a zonal and regional failure with a primary region of us-central1 and the backup region of us-east1. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: '1. Provision a Cloud SQL for MySQL instance in us-central1-a. 2. Create a multiple-zone instance in us-west1-b. 3. Create a read replica in us-east1-c.',
+      },
+      {
+        label: 'B',
+        text: '1. Provision a Cloud SQL for MySQL instance in us-central1-a. 2. Create a multiple-zone instance in us-central1-b. 3. Create a read replica in us-east1-b.',
+      },
+      {
+        label: 'C',
+        text: '1. Provision a Cloud SQL for MySQL instance in us-central1-a. 2. Create a multiple-zone instance in us-east-b. 3. Create a read replica in us-east1-c.',
+      },
+      {
+        label: 'D',
+        text: '1. Provision a Cloud SQL for MySQL instance in us-central1-a. 2. Create a multiple-zone instance in us-east1-b. 3. Create a read replica in us-central1-b.',
+      },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+  {
+    id: 35,
+    question:
+      'You are building an Android game that needs to store data on a Google Cloud serverless database. The database will log user activity, store user preferences, and receive in-game updates. The target audience resides in developing countries that have intermittent internet connectivity. You need to ensure that the game can synchronize game data to the backend database whenever an internet network is available. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Firestore.' },
+      {
+        label: 'B',
+        text: 'Use Cloud SQL with an external (public) IP address.',
+      },
+      { label: 'C', text: 'Use an in-app embedded database.' },
+      { label: 'D', text: 'Use Cloud Spanner.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 36,
+    question:
+      'You released a popular mobile game and are using a 50 TB Cloud Spanner instance to store game data in a PITR-enabled production environment. When you analyzed the game statistics, you realized that some players are exploiting a loophole to gather more points to get on the leaderboard. Another DBA accidentally ran an emergency bugfix script that corrupted some of the data in the production environment. You need to determine the extent of the data corruption and restore the production environment. What should you do? (Choose two.)',
+    options: [
+      {
+        label: 'A',
+        text: 'If the corruption is significant, use backup and restore, and specify a recovery timestamp.',
+      },
+      {
+        label: 'B',
+        text: 'If the corruption is significant, perform a stale read and specify a recovery timestamp. Write the results back.',
+      },
+      {
+        label: 'C',
+        text: 'If the corruption is significant, use import and export.',
+      },
+      {
+        label: 'D',
+        text: 'If the corruption is insignificant, use backup and restore, and specify a recovery timestamp.',
+      },
+      {
+        label: 'E',
+        text: 'If the corruption is insignificant, perform a stale read and specify a recovery timestamp. Write the results back.',
+      },
+    ],
+    correctAnswer: 'AE',
+    communityVote: 'AE (86%)',
+  },
+  {
+    id: 37,
+    question:
+      'You are starting a large CSV import into a Cloud SQL for MySQL instance that has many open connections. You checked memory and CPU usage, and sufficient resources are available. You want to follow Google-recommended practices to ensure that the import will not time out. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Close idle connections or restart the instance before beginning the import operation.',
+      },
+      {
+        label: 'B',
+        text: 'Increase the amount of memory allocated to your instance.',
+      },
+      {
+        label: 'C',
+        text: 'Ensure that the service account has the Storage Admin role.',
+      },
+      {
+        label: 'D',
+        text: 'Increase the number of CPUs for the instance to ensure that it can handle the additional import operation.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 38,
+    question:
+      'You are migrating your data center to Google Cloud. You plan to migrate your applications to Compute Engine and your Oracle databases to Bare Metal Solution for Oracle. You must ensure that the applications in different projects can communicate securely and efficiently with the Oracle databases. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Set up a Shared VPC, configure multiple service projects, and create firewall rules.',
+      },
+      { label: 'B', text: 'Set up Serverless VPC Access.' },
+      { label: 'C', text: 'Set up Private Service Connect.' },
+      { label: 'D', text: 'Set up Traffic Director.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 39,
+    question:
+      'You are running an instance of Cloud Spanner as the backend of your ecommerce website. You learn that the quality assurance (QA) team has doubled the number of their test cases. You need to create a copy of your Cloud Spanner database in a new test environment to accommodate the additional test cases. You want to follow Google-recommended practices. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud Functions to run the export in Avro format.',
+      },
+      {
+        label: 'B',
+        text: 'Use Cloud Functions to run the export in text format.',
+      },
+      { label: 'C', text: 'Use Dataflow to run the export in Avro format.' },
+      { label: 'D', text: 'Use Dataflow to run the export in text format.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+  {
+    id: 40,
+    question:
+      'You need to redesign the architecture of an application that currently uses Cloud SQL for PostgreSQL. The users of the application complain about slow query response times. You want to enhance your application architecture to offer sub-millisecond query latency. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Configure Firestore, and modify your application to offload queries.',
+      },
+      {
+        label: 'B',
+        text: 'Configure Bigtable, and modify your application to offload queries.',
+      },
+      {
+        label: 'C',
+        text: 'Configure Cloud SQL for PostgreSQL read replicas to offload queries.',
+      },
+      {
+        label: 'D',
+        text: 'Configure Memorystore, and modify your application to offload queries.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (81%)',
+  },
 ];
