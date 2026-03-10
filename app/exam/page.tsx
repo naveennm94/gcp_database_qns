@@ -13,7 +13,7 @@ export default function ExamPage() {
   const [examFinished, setExamFinished] = useState(false);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<Answer[]>([]);
-  const [timeRemaining, setTimeRemaining] = useState(3600); // 1 hour in seconds
+  const [timeRemaining, setTimeRemaining] = useState(10800); // 3 hours in seconds
   const [selectedOptions, setSelectedOptions] = useState<string[]>([]);
   const [markedForReview, setMarkedForReview] = useState<number[]>([]);
 
@@ -75,7 +75,7 @@ export default function ExamPage() {
     setExamStarted(true);
     setCurrentQuestionIndex(0);
     setAnswers([]);
-    setTimeRemaining(3600);
+    setTimeRemaining(10800);
     setExamFinished(false);
     setSelectedOptions([]);
     setMarkedForReview([]);
@@ -204,7 +204,7 @@ export default function ExamPage() {
                 </div>
                 <div className='text-center'>
                   <div className='text-3xl font-bold text-indigo-600 mb-2'>
-                    1:00:00
+                    3:00:00
                   </div>
                   <div className='text-gray-600 font-medium'>Duration</div>
                 </div>
@@ -238,7 +238,7 @@ export default function ExamPage() {
                   </h3>
                   <div className='mt-2 text-sm text-yellow-700'>
                     <ul className='list-disc list-inside space-y-1'>
-                      <li>You have 1 hour to complete the exam</li>
+                      <li>You have 3 hours to complete the exam</li>
                       <li>Some questions may have multiple correct answers</li>
                       <li>
                         You can mark questions for review and return to them

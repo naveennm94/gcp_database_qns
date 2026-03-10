@@ -1534,4 +1534,1864 @@ export const examQuestions: Question[] = [
     correctAnswer: 'A',
     communityVote: 'A (100%)',
   },
+  {
+    id: 71,
+    question:
+      'Your organization has a busy transactional Cloud SQL for MySQL instance. Your analytics team needs access to the data so they can build monthly sales reports. You need to provide data access without affecting performance. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a read replica and provide DB credentials to analytics team.',
+      },
+      {
+        label: 'B',
+        text: 'Create a read replica, enable cloudsql.iam_authentication, and grant read access.',
+      },
+      {
+        label: 'C',
+        text: 'Enable cloudsql.iam_authentication on the primary instance.',
+      },
+      {
+        label: 'D',
+        text: 'Provide credentials to the primary database instance.',
+      },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (75%), A (25%)',
+  },
+
+  {
+    id: 72,
+    question:
+      'Your organization stores marketing data in Bigtable. Performance issues occur daily between 9–10 AM for a specific dataset used by pilot users. What should you do to troubleshoot?',
+    options: [
+      { label: 'A', text: 'Separate users into different Bigtable instances.' },
+      { label: 'B', text: 'Check Cloud Monitoring bytes_used metric.' },
+      { label: 'C', text: 'Use Key Visualizer for Bigtable.' },
+      { label: 'D', text: 'Add more nodes to the Bigtable cluster.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 73,
+    question:
+      'You are developing a global transactional application requiring ACID compliance and 99.999% availability. Which database should you choose?',
+    options: [
+      { label: 'A', text: 'Firestore.' },
+      { label: 'B', text: 'Cloud Spanner.' },
+      { label: 'C', text: 'Cloud SQL.' },
+      { label: 'D', text: 'Bigtable.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 74,
+    question:
+      'You want to migrate a PostgreSQL database to Cloud SQL using Database Migration Service and assess known limitations. What should you check? (Choose two.)',
+    options: [
+      { label: 'A', text: 'Whether the database has over 512 tables.' },
+      { label: 'B', text: 'Tables without primary keys.' },
+      { label: 'C', text: 'Tables without foreign keys.' },
+      { label: 'D', text: 'If the database uses pgcrypto extension.' },
+      {
+        label: 'E',
+        text: 'If the source uses customer-managed encryption keys.',
+      },
+    ],
+    correctAnswer: 'BE',
+    communityVote: 'BE (77%), BD (23%)',
+  },
+
+  {
+    id: 75,
+    question:
+      'A Firestore-backed Firebase app serves the same top ten news stories daily to a global audience. You want to optimize cost and latency. What should you do?',
+    options: [
+      { label: 'A', text: 'Enable serializable isolation.' },
+      { label: 'B', text: 'Deploy US multi-region Firestore.' },
+      {
+        label: 'C',
+        text: 'Build a Firestore bundle and deploy it to Cloud CDN.',
+      },
+      { label: 'D', text: 'Create a Firestore index on news story date.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 76,
+    question:
+      'You need to migrate a 1 TB PostgreSQL database from Compute Engine to Cloud SQL with minimal downtime. What should you do?',
+    options: [
+      { label: 'A', text: 'Export and import the database.' },
+      { label: 'B', text: 'Use Migrate for Compute Engine.' },
+      { label: 'C', text: 'Use Datastream.' },
+      { label: 'D', text: 'Use Database Migration Service.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 77,
+    question:
+      'A large Cloud SQL PostgreSQL instance is not mission-critical. You want to reduce backup costs. What should you do?',
+    options: [
+      { label: 'A', text: 'Reduce backup frequency.' },
+      { label: 'B', text: 'Switch backup storage from SSD to HDD.' },
+      { label: 'C', text: 'Store backups in another region.' },
+      { label: 'D', text: 'Reduce automated backup retention to two.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 78,
+    question:
+      'You identified inefficient queries using Cloud SQL Insights and need to determine which application generates them. What should you do?',
+    options: [
+      { label: 'A', text: 'Restart each application.' },
+      { label: 'B', text: 'Scan database query logs.' },
+      { label: 'C', text: 'Scan application logs.' },
+      {
+        label: 'D',
+        text: 'Use query tags for application-centric monitoring.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 79,
+    question:
+      'You are launching a web application starting in one country but planning global expansion with 24/7 availability. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Cloud Spanner regional configuration.' },
+      { label: 'B', text: 'Use Cloud Spanner multi-region configuration.' },
+      { label: 'C', text: 'Use Cloud SQL with cross-region replicas.' },
+      { label: 'D', text: 'Use HA Cloud SQL.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (68%), B (32%)',
+  },
+
+  {
+    id: 80,
+    question:
+      'You are migrating Oracle RAC databases to Google Cloud with minimal application changes. What should you do?',
+    options: [
+      { label: 'A', text: 'Migrate to Cloud Spanner.' },
+      { label: 'B', text: 'Migrate to Compute Engine.' },
+      { label: 'C', text: 'Migrate to Cloud SQL.' },
+      { label: 'D', text: 'Migrate to Bare Metal Solution for Oracle.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 81,
+    question:
+      'You need to migrate Oracle, MySQL, SQL Server, and PostgreSQL databases to Google Cloud using managed services where possible. What should you do?',
+    options: [
+      { label: 'A', text: 'Move all to Cloud SQL.' },
+      {
+        label: 'B',
+        text: 'Oracle/MySQL/SQL Server to Cloud SQL; PostgreSQL to Compute Engine.',
+      },
+      {
+        label: 'C',
+        text: 'MySQL/SQL Server/PostgreSQL to Compute Engine; Oracle to Bare Metal.',
+      },
+      {
+        label: 'D',
+        text: 'MySQL/SQL Server/PostgreSQL to Cloud SQL; Oracle to Bare Metal.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 82,
+    question:
+      'You need to test failover of a Cloud SQL PostgreSQL HA instance using gcloud. What command should you use?',
+    options: [
+      {
+        label: 'A',
+        text: 'gcloud sql instances failover <PrimaryInstanceName>',
+      },
+      {
+        label: 'B',
+        text: 'gcloud sql instances failover <ReplicaInstanceName>',
+      },
+      {
+        label: 'C',
+        text: 'gcloud sql instances promote-replica <PrimaryInstanceName>',
+      },
+      {
+        label: 'D',
+        text: 'gcloud sql instances promote-replica <ReplicaInstanceName>',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 83,
+    question:
+      'You generate weekly SQL reports using Python scripts and want to automate them with minimal cost and overhead. What should you do?',
+    options: [
+      { label: 'A', text: 'Use a VM with cron.' },
+      { label: 'B', text: 'Use Cloud Composer.' },
+      { label: 'C', text: 'Use Cloud Functions triggered by Cloud Scheduler.' },
+      { label: 'D', text: 'Use Cloud Functions triggered by Cloud Tasks.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 84,
+    question:
+      'You want near-real-time replication from Cloud SQL MySQL to BigQuery using managed services. What should you do?',
+    options: [
+      { label: 'A', text: 'Create a custom replication service.' },
+      { label: 'B', text: 'Use Cloud SQL federated queries.' },
+      { label: 'C', text: 'Use Database Migration Service.' },
+      { label: 'D', text: 'Use Datastream and Dataflow to BigQuery.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 85,
+    question:
+      'You are designing a physician portal with intermittent connectivity that should read cached data and support global scaling. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Firestore with PersistenceEnabled=true.' },
+      { label: 'B', text: 'Use Memorystore for Memcached.' },
+      { label: 'C', text: 'Use Pub/Sub with Spanner.' },
+      { label: 'D', text: 'Use Spanner exactStaleness reads.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 86,
+    question:
+      'You perform routine maintenance on a Cloud SQL for MySQL instance on Sundays at midnight, but want to skip maintenance during the year-end holiday season to ensure 24/7 availability. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Define a maintenance window on Sundays 12 AM–1 AM and deny maintenance periods between Nov 1 and Jan 15.',
+      },
+      {
+        label: 'B',
+        text: 'Define a maintenance window on Sundays 12 AM–5 AM and deny maintenance periods between Nov 1 and Feb 15.',
+      },
+      {
+        label: 'C',
+        text: 'Use Cloud Composer to control maintenance windows.',
+      },
+      { label: 'D', text: 'Use Cloud Scheduler to trigger maintenance jobs.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 87,
+    question:
+      'You need to migrate a 100 TB Microsoft SQL Server database to Google Cloud over a 1 Gbps link with 48 hours of downtime allowed. What should you do? (Choose two.)',
+    options: [
+      {
+        label: 'A',
+        text: 'Use a change data capture (CDC) migration strategy.',
+      },
+      { label: 'B', text: 'Move physical servers to Google Cloud.' },
+      {
+        label: 'C',
+        text: 'Perform an offline migration using the 1 Gbps network.',
+      },
+      { label: 'D', text: 'Increase network bandwidth to 2 Gbps.' },
+      { label: 'E', text: 'Increase network bandwidth to 10 Gbps.' },
+    ],
+    correctAnswer: 'AC',
+    communityVote: 'AC (50%), AE (47%)',
+  },
+
+  {
+    id: 88,
+    question:
+      'You must provision hundreds of Cloud SQL for MySQL instances that follow company naming conventions, flags, and tags. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a Dataflow job to automate instance creation.',
+      },
+      {
+        label: 'B',
+        text: 'Use Terraform scripts to automate instance creation.',
+      },
+      { label: 'C', text: 'Create instances manually in the Console.' },
+      { label: 'D', text: 'Create clones from a template instance.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 89,
+    question:
+      'You are migrating 50 TB Oracle databases to Bare Metal Solution. Backups must allow quick restore and 5-year retention with RTO 2 hours and RPO 15 minutes. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Flash storage with flash backups and older backups in Actifio OnVault.',
+      },
+      {
+        label: 'B',
+        text: 'Flash storage DB, local backup on standard storage, older backups in Actifio OnVault.',
+      },
+      { label: 'C', text: 'Flash storage DB, backups to Coldline via RMAN.' },
+      { label: 'D', text: 'Flash storage DB, backups to Archive Storage.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (52%), D (48%)',
+  },
+
+  {
+    id: 90,
+    question:
+      'You need to grant developers permissions on a Cloud Spanner database to read tables, write rows, and add columns/indexes but not drop the database. What role should you assign?',
+    options: [
+      { label: 'A', text: 'Spanner Database Reader and Backup Writer.' },
+      { label: 'B', text: 'Spanner Database Admin.' },
+      { label: 'C', text: 'Spanner Database User.' },
+      { label: 'D', text: 'Spanner Admin.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (88%)',
+  },
+
+  {
+    id: 91,
+    question:
+      'You store sensitive data in Bigtable that must never be accessed from the public internet even with valid service account credentials. What should you do?',
+    options: [
+      { label: 'A', text: 'Use IAM for access control.' },
+      { label: 'B', text: 'Use VPC Service Controls.' },
+      { label: 'C', text: 'Use CMEK encryption.' },
+      { label: 'D', text: 'Use Cloud Armor IP allowlist.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 92,
+    question:
+      'You need a relational analytics database capable of managing hundreds of terabytes for marketing reporting. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL.' },
+      { label: 'B', text: 'BigQuery.' },
+      { label: 'C', text: 'Cloud Spanner.' },
+      { label: 'D', text: 'Bigtable.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (52%), C (48%)',
+  },
+
+  {
+    id: 93,
+    question:
+      'You are using a multi-region Cloud Spanner instance but write performance is slower than in regional deployment. How can you improve write performance?',
+    options: [
+      {
+        label: 'A',
+        text: 'Place most read/write workloads near the leader region.',
+      },
+      { label: 'B', text: 'Use staleness reads of 15 seconds.' },
+      { label: 'C', text: 'Add more replicas.' },
+      { label: 'D', text: 'Keep CPU under 45%.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (87%)',
+  },
+
+  {
+    id: 94,
+    question:
+      'You migrate Oracle databases to Google Cloud and need a cost-effective backup solution with RTO 2 hours and RPO 15 minutes. What should you do?',
+    options: [
+      { label: 'A', text: 'Bare Metal Oracle with on-prem tape backups.' },
+      {
+        label: 'B',
+        text: 'Bare Metal Oracle with Actifio backups to Cloud Storage Nearline.',
+      },
+      {
+        label: 'C',
+        text: 'Bare Metal Oracle backups to Cloud Storage Standard.',
+      },
+      { label: 'D', text: 'Compute Engine Oracle with tape backups.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 95,
+    question:
+      'You migrate PostgreSQL and MySQL databases to Google Cloud. PostgreSQL requires multi-region backups and replicas, while MySQL must meet regional PII residency rules. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Cloud Logging alerts and manual validation.' },
+      {
+        label: 'B',
+        text: 'Use different organizations for each database type.',
+      },
+      { label: 'C', text: 'Use Pub/Sub alerts for instance creation.' },
+      {
+        label: 'D',
+        text: 'Use different projects and apply organization policy constraints.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 96,
+    question:
+      'During a failover test a replica was promoted to primary. You now want to restore the original architecture. What should you do?',
+    options: [
+      { label: 'A', text: 'Bring DB-1 back online.' },
+      { label: 'B', text: 'Delete DB-1 and recreate as replica.' },
+      { label: 'C', text: 'Delete DB-2 so DB-1 becomes primary.' },
+      { label: 'D', text: 'Create DB-4 as replica and promote it to primary.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (48%)',
+  },
+
+  {
+    id: 97,
+    question:
+      'You need a fully managed relational database supporting global transactions and 99.99% availability across regions. What should you use?',
+    options: [
+      { label: 'A', text: 'Bigtable.' },
+      { label: 'B', text: 'Firestore.' },
+      { label: 'C', text: 'Cloud SQL.' },
+      { label: 'D', text: 'Cloud Spanner.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 98,
+    question:
+      'Your Cloud SQL PostgreSQL queries are slow. You need to analyze query performance. What should you do?',
+    options: [
+      { label: 'A', text: 'View Cloud SQL operations.' },
+      { label: 'B', text: 'Use Logs Explorer.' },
+      { label: 'C', text: 'Review application logs.' },
+      { label: 'D', text: 'Use Query Insights dashboard.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 99,
+    question:
+      'You want a highly available Cloud SQL PostgreSQL environment with automatic failover. What should you do?',
+    options: [
+      { label: 'A', text: 'Regional instance with cross-region replica.' },
+      { label: 'B', text: 'Regional instance with standby in another zone.' },
+      { label: 'C', text: 'Two read-write instances across zones.' },
+      { label: 'D', text: 'Two read-write instances across regions.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (88%)',
+  },
+
+  {
+    id: 100,
+    question:
+      'You discovered a Cloud SQL MySQL instance without HA enabled. How should you enable HA following Google best practices?',
+    options: [
+      { label: 'A', text: 'Create new instance with HA and migrate data.' },
+      { label: 'B', text: 'Use Cloud Data Fusion migration.' },
+      {
+        label: 'C',
+        text: 'Use gcloud instances patch to update the instance.',
+      },
+      { label: 'D', text: 'Shut down instance and enable HA.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+  {
+    id: 101,
+    question:
+      'You need to migrate an on-premises PostgreSQL database to Cloud SQL for PostgreSQL with minimal downtime. What should you do?',
+    options: [
+      { label: 'A', text: 'Export the database and import it into Cloud SQL.' },
+      {
+        label: 'B',
+        text: 'Use Database Migration Service for continuous replication.',
+      },
+      { label: 'C', text: 'Copy data manually using scripts.' },
+      { label: 'D', text: 'Use BigQuery Data Transfer Service.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 102,
+    question:
+      'You need to store semi-structured JSON data with high scalability and low latency for a mobile application. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'BigQuery' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 103,
+    question:
+      'Your company needs a database that can scale horizontally to handle millions of writes per second with low latency. What should you choose?',
+    options: [
+      { label: 'A', text: 'BigQuery' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'Cloud SQL' },
+      { label: 'D', text: 'Bigtable' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 104,
+    question:
+      'You need to run analytical queries on petabytes of data with serverless infrastructure. What should you use?',
+    options: [
+      { label: 'A', text: 'BigQuery' },
+      { label: 'B', text: 'Cloud SQL' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'Cloud Spanner' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 105,
+    question:
+      'You want to automatically scale a NoSQL document database for a web application without managing infrastructure. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Firestore' },
+      { label: 'C', text: 'Bigtable' },
+      { label: 'D', text: 'Spanner' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 106,
+    question:
+      'You need to perform real-time analytics on streaming data in Google Cloud. Which service should you use?',
+    options: [
+      { label: 'A', text: 'BigQuery with streaming inserts' },
+      { label: 'B', text: 'Cloud SQL' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'Cloud Storage' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 107,
+    question:
+      'You want to replicate Cloud SQL data to another region for disaster recovery. What should you do?',
+    options: [
+      { label: 'A', text: 'Create a cross-region read replica.' },
+      { label: 'B', text: 'Use BigQuery export.' },
+      { label: 'C', text: 'Create a second standalone instance.' },
+      { label: 'D', text: 'Use Cloud Functions.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 108,
+    question:
+      'You need to analyze slow SQL queries in a Cloud SQL instance. What tool should you use?',
+    options: [
+      { label: 'A', text: 'Cloud Logging' },
+      { label: 'B', text: 'Query Insights' },
+      { label: 'C', text: 'Stackdriver Trace' },
+      { label: 'D', text: 'Cloud Profiler' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 109,
+    question:
+      'You want to automatically back up your Cloud SQL instance and allow point-in-time recovery. What should you enable?',
+    options: [
+      { label: 'A', text: 'Automated backups and binary logging.' },
+      { label: 'B', text: 'Manual backups.' },
+      { label: 'C', text: 'Export to Cloud Storage.' },
+      { label: 'D', text: 'Snapshot backups.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 110,
+    question:
+      'Your application requires strongly consistent global transactions with relational schema support. What database should you choose?',
+    options: [
+      { label: 'A', text: 'Bigtable' },
+      { label: 'B', text: 'Firestore' },
+      { label: 'C', text: 'Cloud Spanner' },
+      { label: 'D', text: 'BigQuery' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 111,
+    question:
+      'You need to migrate a large MySQL database to Cloud SQL with minimal downtime. Which tool should you use?',
+    options: [
+      { label: 'A', text: 'Database Migration Service' },
+      { label: 'B', text: 'Dataflow' },
+      { label: 'C', text: 'Dataproc' },
+      { label: 'D', text: 'BigQuery Transfer Service' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 112,
+    question:
+      'You need a fully managed NoSQL wide-column database for large analytical and operational workloads. What should you use?',
+    options: [
+      { label: 'A', text: 'Firestore' },
+      { label: 'B', text: 'Cloud SQL' },
+      { label: 'C', text: 'Bigtable' },
+      { label: 'D', text: 'BigQuery' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 113,
+    question:
+      'You want to protect Cloud SQL instances from accidental deletion. What should you enable?',
+    options: [
+      { label: 'A', text: 'Deletion protection' },
+      { label: 'B', text: 'IAM roles' },
+      { label: 'C', text: 'Cloud Logging' },
+      { label: 'D', text: 'VPC Service Controls' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 114,
+    question:
+      'Your application needs to store time-series data with high throughput and low latency. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Bigtable' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'BigQuery' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 115,
+    question:
+      'You want to export Cloud SQL data to BigQuery for analytics. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Cloud Data Fusion' },
+      {
+        label: 'B',
+        text: 'Use Cloud SQL export to Cloud Storage then load into BigQuery',
+      },
+      { label: 'C', text: 'Use Pub/Sub' },
+      { label: 'D', text: 'Use Dataflow streaming pipeline' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 116,
+    question:
+      'You need to monitor performance metrics such as CPU, memory, and query latency for Cloud SQL. What service should you use?',
+    options: [
+      { label: 'A', text: 'Cloud Monitoring' },
+      { label: 'B', text: 'Cloud Logging' },
+      { label: 'C', text: 'Error Reporting' },
+      { label: 'D', text: 'Cloud Trace' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 117,
+    question:
+      'You are configuring the networking of a Cloud SQL instance. The only application that connects to this database resides on a Compute Engine VM in the same project as the Cloud SQL instance. The VM and the Cloud SQL instance both use the same VPC network, and both have an external (public) IP address and an internal (private) IP address. You want to improve network security. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Disable and remove the internal IP address assignment.',
+      },
+      {
+        label: 'B',
+        text: 'Disable both the external IP address and the internal IP address, and instead rely on Private Google Access.',
+      },
+      {
+        label: 'C',
+        text: 'Specify an authorized network with the CIDR range of the VM.',
+      },
+      {
+        label: 'D',
+        text: 'Disable and remove the external IP address assignment.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 118,
+    question:
+      'You are managing two different applications: Order Management and Sales Reporting. Both applications interact with the same Cloud SQL for MySQL database. The Order Management application reads and writes to the database 24/7, but the Sales Reporting application is read-only. Both applications need the latest data. You need to ensure that the performance of the Order Management application is not affected by the Sales Reporting application. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a read replica for the Sales Reporting application.',
+      },
+      {
+        label: 'B',
+        text: 'Create two separate databases in the instance, and perform dual writes from the Order Management application.',
+      },
+      {
+        label: 'C',
+        text: 'Use a Cloud SQL federated query for the Sales Reporting application.',
+      },
+      {
+        label: 'D',
+        text: 'Queue up all the requested reports in Pub/Sub, and execute the reports at night.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 119,
+    question:
+      'You are the DBA of an online tutoring application that runs on a Cloud SQL for PostgreSQL database. You are testing cross-regional failover configuration. After failing over from region R1 to region R2 some application scenarios fail, though queries run fine directly on the DB. The application works normally again after failback to R1. What should you do to identify the cause?',
+    options: [
+      {
+        label: 'A',
+        text: 'Check whether Cloud SQL PostgreSQL versions differ in R1 and R2.',
+      },
+      {
+        label: 'B',
+        text: 'Check whether database patches differ between R1 and R2.',
+      },
+      { label: 'C', text: 'Check whether failover is still in progress.' },
+      {
+        label: 'D',
+        text: 'Determine whether region R2 is a near-real-time copy but not an exact copy of region R1.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (47%)',
+  },
+
+  {
+    id: 120,
+    question:
+      'Your company wants to migrate MySQL, PostgreSQL, and SQL Server databases from on-premises to Google Cloud with near-zero downtime and CDC support without application changes. What should you use?',
+    options: [
+      { label: 'A', text: 'Use native export and import.' },
+      { label: 'B', text: 'Use database links.' },
+      { label: 'C', text: 'Use Dataflow.' },
+      { label: 'D', text: 'Use Database Migration Service.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 121,
+    question:
+      'You manage a Cloud SQL PostgreSQL instance with a primary in region1 and a read replica in region2. Region1 fails. You want to restore availability with minimal data loss. What should you do?',
+    options: [
+      { label: 'A', text: 'Restore from backups in region3.' },
+      { label: 'B', text: 'Restore from backups in region1.' },
+      {
+        label: 'C',
+        text: 'Check replication lag metrics and promote the read replica in region2.',
+      },
+      {
+        label: 'D',
+        text: 'Check operational logs and run manual failover if needed.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 122,
+    question:
+      'Your Cloud SQL MySQL server certificate is expiring. You need to issue a new certificate without restarting the instance. What should you do?',
+    options: [
+      { label: 'A', text: 'Issue a rollback.' },
+      { label: 'B', text: 'Create a new client certificate.' },
+      { label: 'C', text: 'Create a new server certificate.' },
+      { label: 'D', text: 'Reset SSL configuration.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 123,
+    question:
+      'Your company runs Oracle RAC and Data Guard on-premises and wants minimal code changes with the same HA and low latency network. What should you do?',
+    options: [
+      { label: 'A', text: 'Migrate to Cloud Spanner.' },
+      { label: 'B', text: 'Migrate to Cloud SQL.' },
+      { label: 'C', text: 'Run Oracle on Compute Engine.' },
+      { label: 'D', text: 'Use Bare Metal Solution for Oracle.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 124,
+    question:
+      'You need a global payments database that is horizontally scalable, strongly consistent, and provides 99.999% availability. What should you choose?',
+    options: [
+      { label: 'A', text: 'Bare Metal Solution.' },
+      { label: 'B', text: 'Cloud SQL.' },
+      { label: 'C', text: 'Bigtable.' },
+      { label: 'D', text: 'Cloud Spanner.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (89%)',
+  },
+
+  {
+    id: 125,
+    question:
+      'Applications must access Cloud SQL PostgreSQL without passwords. What authentication should you use?',
+    options: [
+      { label: 'A', text: 'IAM authentication.' },
+      { label: 'B', text: 'Managed Active Directory.' },
+      { label: 'C', text: 'Cloud SQL federated queries.' },
+      { label: 'D', text: 'PostgreSQL built-in authentication.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 126,
+    question:
+      'You are migrating a 2 TB PostgreSQL cluster to Compute Engine with minimal downtime. What migration strategy should you use?',
+    options: [
+      { label: 'A', text: 'Offline export and import.' },
+      { label: 'B', text: 'Offline backup and restore.' },
+      {
+        label: 'C',
+        text: 'Online backup, restore, and continuous WAL replication until sync completes.',
+      },
+      { label: 'D', text: 'Online export with WAL replication.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 127,
+    question:
+      'You have a SQL Server Cloud SQL instance with a cross-region replica and must maintain RPO < 5 minutes. How should you verify this?',
+    options: [
+      { label: 'A', text: 'Cloud SQL instance monitoring.' },
+      { label: 'B', text: 'Cloud Monitoring metrics.' },
+      { label: 'C', text: 'Cloud SQL logs.' },
+      {
+        label: 'D',
+        text: 'SQL Server Always On Availability Group dashboard.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (67%)',
+  },
+
+  {
+    id: 128,
+    question:
+      'You migrate PostgreSQL to Cloud SQL and need to withstand zonal failure with <5 minutes downtime and no data loss. What should you do?',
+    options: [
+      { label: 'A', text: 'Nightly snapshots.' },
+      { label: 'B', text: 'CDC replication pipeline.' },
+      { label: 'C', text: 'Cross-region read replica.' },
+      { label: 'D', text: 'Enable High Availability (regional instance).' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 129,
+    question:
+      'Your application VMs and Cloud SQL instances are in different projects. How should you configure networking?',
+    options: [
+      { label: 'A', text: 'VPC peering.' },
+      { label: 'B', text: 'Shared VPC.' },
+      { label: 'C', text: 'Default networks with VPN.' },
+      { label: 'D', text: 'Default networks in both projects.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 130,
+    question:
+      'Terraform destroys and recreates environments causing the database to be deleted. How do you prevent this?',
+    options: [
+      { label: 'A', text: 'Set deletion_protection = true.' },
+      { label: 'B', text: 'Rerun terraform apply.' },
+      { label: 'C', text: 'Create a read replica.' },
+      { label: 'D', text: 'Use PITR.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 131,
+    question:
+      'New users should have read-only access to a Cloud Spanner database. Which IAM role should you assign?',
+    options: [
+      { label: 'A', text: 'roles/spanner.databaseReader' },
+      { label: 'B', text: 'roles/spanner.databaseUser' },
+      { label: 'C', text: 'roles/spanner.viewer' },
+      { label: 'D', text: 'roles/spanner.backupWriter' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 132,
+    question:
+      'Your database workload requires 40k reads/sec and 7k writes/sec. What is the most cost-effective Cloud Spanner configuration?',
+    options: [
+      { label: 'A', text: '4-node Spanner instance.' },
+      { label: 'B', text: '6-node Spanner instance.' },
+      { label: 'C', text: '1-node Spanner instance.' },
+      { label: 'D', text: 'Multi-region instance.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 133,
+    question:
+      'You need a managed, low-latency pipeline to move MySQL data from on-premises into BigQuery. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Datastream → Cloud Storage → Dataflow → BigQuery.',
+      },
+      { label: 'B', text: 'Use Cloud Data Fusion.' },
+      {
+        label: 'C',
+        text: 'Replicate into Cloud SQL and use federated queries.',
+      },
+      { label: 'D', text: 'Periodic extracts to Cloud Storage.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (67%)',
+  },
+
+  {
+    id: 134,
+    question:
+      '100,000 sensors send 10 readings per second. You need real-time monitoring and analysis. Which database should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'BigQuery batch loads' },
+      { label: 'C', text: 'Bigtable' },
+      { label: 'D', text: 'Cloud Spanner' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 135,
+    question:
+      'You want to automate scheduled Firestore exports easily and cheaply. What should you do?',
+    options: [
+      { label: 'A', text: 'Compute Engine cron job.' },
+      { label: 'B', text: 'Dataflow pipeline.' },
+      { label: 'C', text: 'Cloud Scheduler → Cloud Function.' },
+      { label: 'D', text: 'Firebase Admin SDK scheduling.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 136,
+    question:
+      'You need a globally distributed database with strong consistency, low latency, and zero downtime. What should you deploy?',
+    options: [
+      { label: 'A', text: 'Multi-region Cloud Spanner instance.' },
+      { label: 'B', text: 'Bigtable multi-region.' },
+      { label: 'C', text: 'Cloud SQL with replica.' },
+      { label: 'D', text: 'AlloyDB HA.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 137,
+    question:
+      'Your company uses AlloyDB and expects reporting queries to increase. What read pool strategy should you use?',
+    options: [
+      { label: 'A', text: 'Run analytics on primary.' },
+      { label: 'B', text: 'Resize read nodes.' },
+      {
+        label: 'C',
+        text: 'Start with minimal read pools and scale based on load monitoring.',
+      },
+      { label: 'D', text: 'Single large read pool.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 138,
+    question:
+      'You deploy a 10GB Cloud SQL MySQL database for a non-critical application. Data updates nightly and must stay in one region. RTO = 1 day and cost should be minimal. What should you do?',
+    options: [
+      { label: 'A', text: 'Enable HA.' },
+      { label: 'B', text: 'Same-zone read replica.' },
+      { label: 'C', text: 'Cross-region read replica.' },
+      {
+        label: 'D',
+        text: 'Disable HA and enable automated backups in the same region.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 139,
+    question:
+      'You are migrating a 10 TB relational database with sensitive customer data to Cloud SQL PostgreSQL. What should you do to secure the migration? (Choose two.)',
+    options: [
+      { label: 'A', text: 'Enable automatic patching and binary logging.' },
+      {
+        label: 'B',
+        text: 'Use Private Service Connect between on-prem and Cloud SQL.',
+      },
+      { label: 'C', text: 'Use external IP and firewall rules.' },
+      { label: 'D', text: 'Restrict access using IAM and internal IP.' },
+      {
+        label: 'E',
+        text: 'Use Storage Transfer Service with client-side encryption.',
+      },
+    ],
+    correctAnswer: 'BD',
+    communityVote: 'BD (100%)',
+  },
+  {
+    id: 140,
+    question:
+      'You are running a Cloud SQL for PostgreSQL 13 Enterprise Edition instance. During an audit, you discovered that the write-ahead logs used for point-in-time recovery (PITR) are stored on disk. You need to store PITR logs in a Cloud Storage bucket going forward without losing current PITR logs. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Clone the instance and create a new instance with PITR retention set to 30 days.',
+      },
+      {
+        label: 'B',
+        text: 'Change the transaction logs (WAL) retention period.',
+      },
+      { label: 'C', text: 'Upgrade the instance to Enterprise Plus Edition.' },
+      { label: 'D', text: 'Disable PITR and then enable PITR again.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 141,
+    question:
+      'You need to store BigQuery data access audit logs for 6 months and ensure that only audit personnel can access them across all projects. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Enable data access logs in each project and restrict access via IAM.',
+      },
+      {
+        label: 'B',
+        text: 'Export logs to a Cloud Storage bucket in the analysts projects.',
+      },
+      {
+        label: 'C',
+        text: 'Export logs to a Cloud Storage bucket in a new project using project-level sink.',
+      },
+      {
+        label: 'D',
+        text: 'Use an aggregated export sink to export logs to a Cloud Storage bucket in a new audit project.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (100%)',
+  },
+
+  {
+    id: 142,
+    question:
+      'Each analytics team runs BigQuery jobs in their own projects. You want them to monitor slot usage in their projects. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a Cloud Monitoring dashboard using the metric query/scanned_bytes.',
+      },
+      {
+        label: 'B',
+        text: 'Create a Cloud Monitoring dashboard using the metric slots/allocated_for_project.',
+      },
+      { label: 'C', text: 'Export logs to Cloud Storage and analyze usage.' },
+      { label: 'D', text: 'Use Cloud Logging queries to monitor slots.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 143,
+    question:
+      'You need to prevent hotspotting in Cloud Spanner when designing a primary key for high write workloads. What should you do?',
+    options: [
+      { label: 'A', text: 'Use a sequential numeric key.' },
+      { label: 'B', text: 'Use timestamp-based keys.' },
+      { label: 'C', text: 'Use a random UUID as the primary key.' },
+      { label: 'D', text: 'Use monotonically increasing order IDs.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 144,
+    question:
+      'You need a highly scalable NoSQL database for large analytical workloads with low latency access to structured data. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'Bigtable' },
+      { label: 'D', text: 'Firestore' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 145,
+    question:
+      'Your application needs globally consistent relational database transactions with horizontal scalability. Which service should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'BigQuery' },
+      { label: 'D', text: 'Firestore' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 146,
+    question:
+      'You need to migrate a multi-terabyte PostgreSQL database to BigQuery while maintaining referential integrity and preserving procedures. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Database Migration Service and rewrite procedures as BigQuery scripts.',
+      },
+      { label: 'B', text: 'Manually export tables using pgAdmin.' },
+      { label: 'C', text: 'Use Cloud SQL export to CSV and load to BigQuery.' },
+      { label: 'D', text: 'Use Storage Transfer Service directly.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 147,
+    question:
+      'You want to protect sensitive BigQuery data from exfiltration outside your organization. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud Armor' },
+      { label: 'B', text: 'VPC Service Controls' },
+      { label: 'C', text: 'Private Google Access' },
+      { label: 'D', text: 'Cloud NAT' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 148,
+    question:
+      'Your company needs encryption keys that they fully control for protecting data stored in BigQuery. What should you use?',
+    options: [
+      { label: 'A', text: 'Google-managed encryption keys' },
+      { label: 'B', text: 'Customer-managed encryption keys in Cloud KMS' },
+      { label: 'C', text: 'Customer-supplied encryption keys' },
+      { label: 'D', text: 'Disk-level encryption only' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 149,
+    question:
+      'You need a serverless, globally scalable document database for mobile and web apps. What should you use?',
+    options: [
+      { label: 'A', text: 'Firestore' },
+      { label: 'B', text: 'Cloud SQL' },
+      { label: 'C', text: 'Bigtable' },
+      { label: 'D', text: 'Cloud Spanner' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 150,
+    question:
+      'You want to analyze petabyte-scale data using SQL queries without managing infrastructure. What service should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'BigQuery' },
+      { label: 'D', text: 'Bigtable' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 151,
+    question:
+      'You need to process streaming IoT data with extremely high throughput and low latency storage. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Bigtable' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'Cloud Spanner' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 152,
+    question:
+      'You need a managed relational database compatible with PostgreSQL with automatic scaling and high performance. What should you choose?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'AlloyDB for PostgreSQL' },
+      { label: 'C', text: 'Cloud Spanner' },
+      { label: 'D', text: 'Bigtable' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 153,
+    question:
+      'You need to automatically scale relational database workloads globally while maintaining strong consistency. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud SQL' },
+      { label: 'B', text: 'Cloud Spanner' },
+      { label: 'C', text: 'Firestore' },
+      { label: 'D', text: 'Bigtable' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 154,
+    question:
+      'You want to migrate MySQL workloads with minimal downtime and continuous replication to Cloud SQL. What should you use?',
+    options: [
+      { label: 'A', text: 'Database Migration Service' },
+      { label: 'B', text: 'Storage Transfer Service' },
+      { label: 'C', text: 'Cloud Data Fusion' },
+      { label: 'D', text: 'Dataflow' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 155,
+    question:
+      'You want to analyze operational database data in BigQuery without copying the data. What should you use?',
+    options: [
+      { label: 'A', text: 'Federated queries' },
+      { label: 'B', text: 'Dataflow pipelines' },
+      { label: 'C', text: 'Cloud Functions' },
+      { label: 'D', text: 'Cloud Composer' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 156,
+    question:
+      'You want to monitor database metrics and set alerts for performance issues in Google Cloud. What service should you use?',
+    options: [
+      { label: 'A', text: 'Cloud Monitoring' },
+      { label: 'B', text: 'Cloud Logging' },
+      { label: 'C', text: 'Error Reporting' },
+      { label: 'D', text: 'Cloud Trace' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 157,
+    question:
+      'You want to capture real-time change data from MySQL databases and stream it into BigQuery for analytics. What service should you use?',
+    options: [
+      { label: 'A', text: 'Datastream' },
+      { label: 'B', text: 'Database Migration Service' },
+      { label: 'C', text: 'Cloud SQL export' },
+      { label: 'D', text: 'Storage Transfer Service' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 158,
+    question:
+      'You need to automate periodic database backup exports using a serverless approach. What should you use?',
+    options: [
+      { label: 'A', text: 'Cloud Scheduler with Cloud Functions' },
+      { label: 'B', text: 'Compute Engine cron job' },
+      { label: 'C', text: 'Manual backup exports' },
+      { label: 'D', text: 'Cloud Run scheduled job only' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+  {
+    id: 159,
+    question:
+      'You have a regional Spanner instance with no autoscaler serving production workload. During a promotional event, write activity surges and the database is close to the storage limit. Based on trends it will run out of storage in a few hours. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a custom instance configuration and add a custom read-only replica to the Spanner instance.',
+      },
+      {
+        label: 'B',
+        text: 'Increase the compute capacity of the Spanner instance.',
+      },
+      {
+        label: 'C',
+        text: 'Move the Spanner instance to a multi-regional configuration.',
+      },
+      {
+        label: 'D',
+        text: 'Archive and delete historical data from the database.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 160,
+    question:
+      'Your organization deploys a high-volume, low-latency sensor data ingestion system. Resilience and growth are critical. Which database design on Google Cloud ensures performance and high availability?',
+    options: [
+      {
+        label: 'A',
+        text: 'Deploy multiple Bigtable clusters and manually shard data across them.',
+      },
+      {
+        label: 'B',
+        text: 'Deploy a single-zone Bigtable cluster optimized for write throughput.',
+      },
+      {
+        label: 'C',
+        text: 'Deploy a single-region Bigtable instance and increase nodes.',
+      },
+      {
+        label: 'D',
+        text: 'Provision a multi-zone Bigtable cluster with replication, stress testing, and monitoring.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 161,
+    question:
+      'You are migrating an on-premises Oracle database to Cloud SQL for PostgreSQL. You need to convert schema, procedures, functions, and triggers with minimal manual effort. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Manually rewrite Oracle schema and queries for PostgreSQL.',
+      },
+      {
+        label: 'B',
+        text: 'Use a schema conversion tool, then manually rewrite queries.',
+      },
+      { label: 'C', text: 'Migrate data directly without conversion.' },
+      {
+        label: 'D',
+        text: 'Use Database Migration Service code conversion workspace and refactor as needed.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 162,
+    question:
+      'You use Memorystore for Redis to cache data. If a region fails and traffic moves to another region, you want the new region not to start with an empty cache. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Memorystore Standard Tier and disable read replicas.',
+      },
+      {
+        label: 'B',
+        text: 'Use Memorystore Standard Tier with a read replica.',
+      },
+      {
+        label: 'C',
+        text: 'Schedule exports and store them in a dual-region Cloud Storage bucket.',
+      },
+      { label: 'D', text: 'Enable Redis RDB snapshots.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 163,
+    question:
+      'Your organization runs a high-volume low-latency application on Bigtable and wants to reduce costs without affecting performance. What should you do?',
+    options: [
+      { label: 'A', text: 'Reduce replication factor across clusters.' },
+      {
+        label: 'B',
+        text: 'Consolidate multiple clusters into a single large cluster.',
+      },
+      {
+        label: 'C',
+        text: 'Analyze access patterns and redesign schema while adjusting node count.',
+      },
+      { label: 'D', text: 'Switch to a lower-performance storage type.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 164,
+    question:
+      'A multi-region Spanner instance stores data from an application that performs many writes but few reads. You notice latency regression. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Enable leader-aware routing in the client library.',
+      },
+      { label: 'B', text: 'Add additional indexes.' },
+      { label: 'C', text: 'Disable leader-aware routing.' },
+      { label: 'D', text: 'Increase the number of nodes.' },
+    ],
+    correctAnswer: 'A',
+  },
+  {
+    id: 165,
+    question:
+      'You are designing an ecommerce app expecting bursty write volumes during sales periods. How should you configure Spanner to maintain performance?',
+    options: [
+      {
+        label: 'A',
+        text: 'Implement sharding across multiple Spanner instances.',
+      },
+      { label: 'B', text: 'Use read-only transactions.' },
+      { label: 'C', text: 'Use interleaved tables.' },
+      {
+        label: 'D',
+        text: 'Enable autoscaling and set maximum nodes for peak write volume.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 166,
+    question:
+      'Your Cloud SQL for MySQL instance shows slow performance during peak hours. You suspect inefficient queries and want to analyze them. What should you do?',
+    options: [
+      { label: 'A', text: 'Use the underprovisioned instance recommender.' },
+      { label: 'B', text: 'Increase read_buffer_size.' },
+      { label: 'C', text: 'Enable Query Insights.' },
+      { label: 'D', text: 'Create a Cloud Monitoring alert for queries.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 167,
+    question:
+      'You are migrating PostgreSQL to Spanner and need to handle existing integer primary keys with minimal app changes. What should you do?',
+    options: [
+      { label: 'A', text: 'Use sequential integer values.' },
+      { label: 'B', text: 'Set default values to max(primary_key)+1.' },
+      { label: 'C', text: 'Use UUID v4 values.' },
+      { label: 'D', text: 'Use BIT_REVERSED_POSITIVE sequences.' },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 168,
+    question:
+      'Your Cloud SQL MySQL table stores product descriptions. A chatbot must find the closest matching product for a user’s freeform text query. What should you do?',
+    options: [
+      { label: 'A', text: 'Use regex matching in stored procedures.' },
+      {
+        label: 'B',
+        text: 'Create embeddings for product descriptions and perform ANN search.',
+      },
+      { label: 'C', text: 'Use LIKE operator.' },
+      { label: 'D', text: 'Use SOUNDEX comparison.' },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 169,
+    question:
+      'Your Cloud SQL MySQL Enterprise instance with four replicas needs an urgent security update during business downtime at 11 PM. What should you do?',
+    options: [
+      { label: 'A', text: 'Reschedule scheduled maintenance to 11 PM.' },
+      {
+        label: 'B',
+        text: 'Perform self-service maintenance on read replicas.',
+      },
+      {
+        label: 'C',
+        text: 'Perform self-service maintenance on the primary instance.',
+      },
+      { label: 'D', text: 'Reschedule maintenance to apply immediately.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 170,
+    question:
+      'You have a multi-region HA PostgreSQL cluster on Cloud SQL and want to test disaster recovery from a regional outage. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Promote the cross-region replica and verify application access.',
+      },
+      { label: 'B', text: 'Initiate failover to standby instance.' },
+      { label: 'C', text: 'Restore backup in another region.' },
+      { label: 'D', text: 'Run chaos engineering experiments.' },
+    ],
+    correctAnswer: 'A',
+  },
+  {
+    id: 171,
+    question:
+      'You are migrating an OLTP PostgreSQL database to Google Cloud with minimal admin overhead and analytics capability. What should you choose?',
+    options: [
+      { label: 'A', text: 'Spanner with PGAdapter.' },
+      { label: 'B', text: 'Cloud SQL for PostgreSQL.' },
+      { label: 'C', text: 'AlloyDB for PostgreSQL.' },
+      { label: 'D', text: 'Self-managed PostgreSQL on Compute Engine.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 172,
+    question:
+      'You are building a Python app connecting to AlloyDB, but security policy forbids username/password authentication. What should you do?',
+    options: [
+      { label: 'A', text: 'Use PostgreSQL client with IAP.' },
+      {
+        label: 'B',
+        text: 'Use AlloyDB Python connector with IAM authentication.',
+      },
+      { label: 'C', text: 'Use SSL enforced connections.' },
+      { label: 'D', text: 'Use service account as username/password.' },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 173,
+    question:
+      "You are creating Cloud SQL for PostgreSQL instances in us-east1 and us-east4 using private IP addresses. You are using a Shared VPC network but receive a 'Network association failed' error. What should you do?",
+    options: [
+      {
+        label: 'A',
+        text: 'Use the Google Cloud console to assign private IP.',
+      },
+      {
+        label: 'B',
+        text: 'Enable the Service Networking API for host and service projects.',
+      },
+      {
+        label: 'C',
+        text: 'Configure Private Services Access before assigning a private IP.',
+      },
+      {
+        label: 'D',
+        text: 'Assign the private IP using gcloud sql instances patch command.',
+      },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 174,
+    question:
+      'Your company is migrating a monolithic application to microservices on Google Cloud. A GKE authentication service needs to access Cloud SQL for PostgreSQL, and developers also need local access. You need a centralized and secure connectivity strategy. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud SQL Auth Proxy for applications and database-native username/password for developers.',
+      },
+      {
+        label: 'B',
+        text: 'Enable public IP and restrict access using firewall rules.',
+      },
+      {
+        label: 'C',
+        text: 'Create database-native credentials and store them in a secret manager.',
+      },
+      {
+        label: 'D',
+        text: 'Use IAM service accounts with Workload Identity for services and IAM authentication with Cloud SQL Auth Proxy for developers.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 175,
+    question:
+      'You export BAK files daily from Cloud SQL for SQL Server to Cloud Storage using a gcloud command at 6 AM. You want to automate this using managed Google Cloud services. What should you do?',
+    options: [
+      { label: 'A', text: 'Enable retained backups for the instance.' },
+      {
+        label: 'B',
+        text: 'Create a Cloud Run function triggered by Pub/Sub and schedule it with Cloud Scheduler.',
+      },
+      { label: 'C', text: 'Enable automated backups with 7-day retention.' },
+      {
+        label: 'D',
+        text: 'Create a cron job and configure Pub/Sub as the target.',
+      },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 176,
+    question:
+      'You have several on-premises Percona Server for MySQL 8.0 instances with multi-terabyte data and read-heavy workloads. You want to migrate to Google Cloud with minimal downtime and changes. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Database Migration Service to migrate to AlloyDB.',
+      },
+      {
+        label: 'B',
+        text: 'Use Datastream to migrate to Cloud SQL Enterprise.',
+      },
+      { label: 'C', text: 'Use spanner-migration-tool to migrate to Spanner.' },
+      {
+        label: 'D',
+        text: 'Use Database Migration Service to migrate to Cloud SQL Enterprise Plus.',
+      },
+    ],
+    correctAnswer: 'D',
+  },
+  {
+    id: 177,
+    question:
+      'You are migrating a global ecommerce PostgreSQL platform with stored procedures to Google Cloud. The platform requires RTO of 5 minutes and RPO of 30 seconds, with global read access but primary transactional data in one region. What should you do?',
+    options: [
+      { label: 'A', text: 'Deploy a multi-region Spanner instance.' },
+      {
+        label: 'B',
+        text: 'Deploy AlloyDB in the primary region with HA and cross-region read replicas.',
+      },
+      {
+        label: 'C',
+        text: 'Deploy a single-region AlloyDB cluster with a replica in the same zone.',
+      },
+      {
+        label: 'D',
+        text: 'Deploy multi-region Cloud SQL PostgreSQL with async replication.',
+      },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 178,
+    question:
+      'Your Cloud SQL PostgreSQL instance serves transactional users while analytics queries consume most CPU. Reporting queries include complex joins and large tables. You need better analytics performance without affecting transactions. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Upgrade Cloud SQL Enterprise Edition and run all queries on the primary instance.',
+      },
+      {
+        label: 'B',
+        text: 'Migrate to AlloyDB and upgrade primary to 32 vCPU with materialized views.',
+      },
+      {
+        label: 'C',
+        text: 'Migrate to AlloyDB with columnar engine and use read pools for analytical queries.',
+      },
+      {
+        label: 'D',
+        text: 'Upgrade Cloud SQL instance and implement PgBouncer.',
+      },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 179,
+    question:
+      'Your company wants to migrate product catalog data from DynamoDB to Bigtable with minimal downtime and effort while maintaining consistency. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Export DynamoDB to CSV, upload to Cloud Storage, and import using cbt CLI.',
+      },
+      {
+        label: 'B',
+        text: 'Use a Dataflow pipeline with DynamoDBIO and BigtableIO connectors.',
+      },
+      { label: 'C', text: 'Develop a custom migration script using APIs.' },
+      { label: 'D', text: 'Use Dataproc to export and load data.' },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 180,
+    question:
+      'You are designing a cache for tracking products browsed by users on an ecommerce site using a key-value database. It must support multiple VPC networks, high throughput, low latency, and managed service. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Bigtable with Private Google Access API endpoints.',
+      },
+      {
+        label: 'B',
+        text: 'Use Memorystore for Redis Cluster with Private Service Connect.',
+      },
+      {
+        label: 'C',
+        text: 'Use Memorystore Redis with Private Service Access.',
+      },
+      { label: 'D', text: 'Deploy Redis on a VM in a Shared VPC.' },
+    ],
+    correctAnswer: 'B',
+  },
+  {
+    id: 181,
+    question:
+      'You run a mission-critical application on GKE connecting to Cloud SQL PostgreSQL using private IP. You want to maximize uptime during planned maintenance without major application changes. What should you do?',
+    options: [
+      { label: 'A', text: 'Enable automated backups with 365-day retention.' },
+      { label: 'B', text: 'Create a cross-region read replica.' },
+      { label: 'C', text: 'Upgrade to Cloud SQL Enterprise Plus edition.' },
+      { label: 'D', text: 'Set up maintenance notifications.' },
+    ],
+    correctAnswer: 'C',
+  },
+  {
+    id: 182,
+    question:
+      'Your IoT platform ingests data from 100k devices into Bigtable with 2M writes/sec. You observe hotspotting due to row key design. You also want to reduce storage cost while maintaining <10ms read latency. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Add a hash prefix to row keys, configure autoscaling thresholds, and move data older than 6 months to Cloud Storage.',
+      },
+      {
+        label: 'B',
+        text: 'Split tables by device type and use multiple instances.',
+      },
+      {
+        label: 'C',
+        text: 'Keep row key deviceId#timestamp and enable autoscaling.',
+      },
+      {
+        label: 'D',
+        text: 'Increase cluster to 20 nodes and enable compression.',
+      },
+    ],
+    correctAnswer: 'A',
+  },
 ];
