@@ -912,4 +912,626 @@ export const examQuestions: Question[] = [
     correctAnswer: 'D',
     communityVote: 'D (81%)',
   },
+  {
+    id: 41,
+    question:
+      'You need to migrate existing databases from Microsoft SQL Server 2016 Standard Edition on a single Windows Server 2019 Datacenter Edition to a single Cloud SQL for SQL Server instance. During the discovery phase of your project, you notice that your on-premises server peaks at around 25,000 read IOPS. You need to ensure that your Cloud SQL instance is sized appropriately to maximize read performance. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Create a SQL Server 2019 Standard on Standard machine type with 4 vCPUs, 15 GB of RAM, and 800 GB of solid-state drive (SSD).',
+      },
+      {
+        label: 'B',
+        text: 'Create a SQL Server 2019 Standard on High Memory machine type with at least 16 vCPUs, 104 GB of RAM, and 200 GB of SSD.',
+      },
+      {
+        label: 'C',
+        text: 'Create a SQL Server 2019 Standard on High Memory machine type with 16 vCPUs, 104 GB of RAM, and 4 TB of SSD. Most Voted',
+      },
+      {
+        label: 'D',
+        text: 'Create a SQL Server 2019 Enterprise on High Memory machine type with 16 vCPUs, 104 GB of RAM, and 500 GB of SSD.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+  {
+    id: 42,
+    question:
+      'You are managing a small Cloud SQL instance for developers to do testing. The instance is not critical and has a recovery point objective (RPO) of several days. You want to minimize ongoing costs for this instance. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: ' Take no backups, and turn off transaction log retention.',
+      },
+      {
+        label: 'B',
+        text: 'Take one manual backup per day, and turn off transaction log retention.',
+      },
+      {
+        label: 'C',
+        text: 'Turn on automated backup, and turn off transaction log retention.',
+      },
+      {
+        label: 'D',
+        text: 'Turn on automated backup, and turn on transaction log retention.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+  {
+    id: 43,
+    question:
+      'You manage a meeting booking application that uses Cloud SQL. During an important launch, the Cloud SQL instance went through a maintenance event that resulted in a downtime of more than 5 minutes and adversely affected your production application. You need to immediately address the maintenance issue to prevent any unplanned events in the future. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: "Set your production instance's maintenance window to non-business hours.",
+      },
+      {
+        label: 'B',
+        text: 'Migrate the Cloud SQL instance to Cloud Spanner to avoid any future disruptions due to maintenance.',
+      },
+      {
+        label: 'C',
+        text: 'Contact Support to understand why your Cloud SQL instance had a downtime of more than 5 minutes.',
+      },
+      {
+        label: 'D',
+        text: 'Use Cloud Scheduler to schedule a maintenance window of no longer than 5 minutes.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 44,
+    question:
+      'You are designing a highly available (HA) Cloud SQL for PostgreSQL instance that will be used by 100 databases. Each database contains 80 tables that were migrated from your on-premises environment to Google Cloud. The applications that use these databases are located in multiple regions in the US, and you need to ensure that read and write operations have low latency. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Deploy 2 Cloud SQL instances in the us-central1 region with HA enabled, and create read replicas in us-east1 and us-west1.',
+      },
+      {
+        label: 'B',
+        text: 'Deploy 2 Cloud SQL instances in the us-central1 region, and create read replicas in us-east1 and us-west1.',
+      },
+      {
+        label: 'C',
+        text: 'Deploy 4 Cloud SQL instances in the us-central1 region with HA enabled, and create read replicas in us-central1, us-east1, and us-west1.',
+      },
+      {
+        label: 'D',
+        text: 'Deploy 4 Cloud SQL instances in the us-central1 region, and create read replicas in us-central1, us-east1 and us-west1.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (65%), C (35%)',
+  },
+
+  {
+    id: 45,
+    question:
+      'You work in the logistics department. Your data analysis team needs daily extracts from Cloud SQL for MySQL to train a machine learning model. The model will be used to optimize next-day routes. You need to export the data in CSV format. You want to follow Google-recommended practices. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud Scheduler to trigger a Cloud Function that will run a select * from table(s) query to call the cloudsql.instances.export API.',
+      },
+      {
+        label: 'B',
+        text: 'Use Cloud Scheduler to trigger a Cloud Function through Pub/Sub to call the cloudsql.instances.export API.',
+      },
+      {
+        label: 'C',
+        text: 'Use Cloud Composer to orchestrate an export by calling the cloudsql.instances.export API.',
+      },
+      {
+        label: 'D',
+        text: 'Use Cloud Composer to execute a select * from table(s) query and export results.',
+      },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (62%), C (24%), Others (14%)',
+  },
+
+  {
+    id: 46,
+    question:
+      'You are choosing a database backend for a new application. The application will ingest data points from IoT sensors. You need to ensure that the application can scale up to millions of requests per second with sub-10ms latency and store up to 100 TB of history. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud SQL with read replicas for throughput.',
+      },
+      {
+        label: 'B',
+        text: 'Use Firestore, and rely on automatic serverless scaling.',
+      },
+      {
+        label: 'C',
+        text: 'Use Memorystore for Memcached, and add nodes as necessary to achieve the required throughput.',
+      },
+      {
+        label: 'D',
+        text: 'Use Bigtable, and add nodes as necessary to achieve the required throughput.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (92%), Others (8%)',
+  },
+
+  {
+    id: 47,
+    question:
+      'You are designing a payments processing application on Google Cloud. The application must continue to serve requests and avoid any user disruption if a regional failure occurs. You need to use AES-256 to encrypt data in the database, and you want to control where you store the encryption key. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud Spanner with a customer-managed encryption key (CMEK).',
+      },
+      {
+        label: 'B',
+        text: 'Use Cloud Spanner with default encryption.',
+      },
+      {
+        label: 'C',
+        text: 'Use Cloud SQL with a customer-managed encryption key (CMEK).',
+      },
+      {
+        label: 'D',
+        text: 'Use Bigtable with default encryption.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (89%), Others (11%)',
+  },
+
+  {
+    id: 48,
+    question:
+      'You are managing a Cloud SQL for MySQL environment in Google Cloud. You have deployed a primary instance in Zone A and a read replica instance in Zone B, both in the same region. You are notified that the replica instance in Zone B was unavailable for 10 minutes. You need to ensure that the read replica instance is still working. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use the Google Cloud Console or gcloud CLI to manually create a new clone database.',
+      },
+      {
+        label: 'B',
+        text: 'Use the Google Cloud Console or gcloud CLI to manually create a new failover replica from backup.',
+      },
+      {
+        label: 'C',
+        text: 'Verify that the new replica is created automatically.',
+      },
+      {
+        label: 'D',
+        text: 'Start the original primary instance and resume replication.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (47%), B (29%), D (24%)',
+  },
+  {
+    id: 49,
+    question:
+      'You are migrating an on-premises application to Google Cloud. The application requires a high availability (HA) PostgreSQL database to support business-critical functions. Your company disaster recovery strategy requires a recovery time objective (RTO) and recovery point objective (RPO) within 30 minutes of failure. You plan to use a Google Cloud managed service. What should you do to maximize uptime for your application?',
+    options: [
+      {
+        label: 'A',
+        text: 'Deploy Cloud SQL for PostgreSQL in a regional configuration. Create a read replica in a different zone in the same region and a read replica in another region for disaster recovery.',
+      },
+      {
+        label: 'B',
+        text: 'Deploy Cloud SQL for PostgreSQL in a regional configuration with HA enabled. Take periodic backups, and use this backup to restore to a new Cloud SQL instance in another region during a disaster recovery event.',
+      },
+      {
+        label: 'C',
+        text: 'Deploy Cloud SQL for PostgreSQL in a regional configuration with HA enabled. Create a cross-region read replica, and promote the read replica as the primary node for disaster recovery.',
+      },
+      {
+        label: 'D',
+        text: 'Migrate the PostgreSQL database to multi-regional Cloud Spanner so that a single region outage will not affect your application.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 50,
+    question:
+      'Your team is running a Cloud SQL for MySQL instance with a 5 TB database that must be available 24/7. You need to save database backups on object storage with minimal operational overhead or risk to your production workloads. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use Cloud SQL serverless exports.',
+      },
+      {
+        label: 'B',
+        text: 'Create a read replica, and then use the mysqldump utility to export each table.',
+      },
+      {
+        label: 'C',
+        text: 'Clone the Cloud SQL instance, and then use the mysqldump utility to export the data.',
+      },
+      {
+        label: 'D',
+        text: 'Use the mysqldump utility on the primary database instance to export the backup.',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (90%), Others (10%)',
+  },
+  {
+    id: 51,
+    question:
+      'You are deploying a new Cloud SQL instance on Google Cloud using the Cloud SQL Auth proxy. You have identified snippets of application code that need to access the new Cloud SQL instance. The snippets reside and execute on an application server running on a Compute Engine machine. You want to follow Google-recommended practices to set up IAM as quickly and securely as possible. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'For each application code, set up a common shared user account.',
+      },
+      {
+        label: 'B',
+        text: 'For each application code, set up a dedicated user account.',
+      },
+      {
+        label: 'C',
+        text: 'For the application server, set up a service account.',
+      },
+      {
+        label: 'D',
+        text: 'For the application server, set up a common shared user account.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 52,
+    question:
+      'Your organization is running a low-latency reporting application on Microsoft SQL Server using SSAS, SSRS, and SSIS in an on-premises environment. You want to migrate the SQL Server instances to Google Cloud with minimal disruption to the existing architecture. What should you do?',
+    options: [
+      { label: 'A', text: 'Migrate to Cloud SQL for SQL Server.' },
+      { label: 'B', text: 'Migrate to Cloud SQL for PostgreSQL.' },
+      { label: 'C', text: 'Migrate to Compute Engine.' },
+      { label: 'D', text: 'Migrate to Google Kubernetes Engine (GKE).' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 53,
+    question:
+      'An analytics team needs to read data from Cloud SQL for SQL Server and update a table in Cloud Spanner. You need to create a service account and grant least-privilege access using predefined roles. What roles should you assign?',
+    options: [
+      {
+        label: 'A',
+        text: 'roles/cloudsql.viewer and roles/spanner.databaseUser',
+      },
+      { label: 'B', text: 'roles/cloudsql.editor and roles/spanner.admin' },
+      {
+        label: 'C',
+        text: 'roles/cloudsql.client and roles/spanner.databaseReader',
+      },
+      {
+        label: 'D',
+        text: 'roles/cloudsql.instanceUser and roles/spanner.databaseUser',
+      },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (62%), D (38%)',
+  },
+
+  {
+    id: 54,
+    question:
+      'You are designing a new airline ticketing database application that requires strong consistency, support for structured and JSON data, and global multi-region scaling. What should you use?',
+    options: [
+      {
+        label: 'A',
+        text: 'Cloud SQL for PostgreSQL with cross-region replicas.',
+      },
+      { label: 'B', text: 'Cloud Spanner in a multi-region configuration.' },
+      { label: 'C', text: 'Firestore in Datastore mode.' },
+      { label: 'D', text: 'Bigtable with clusters in multiple regions.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (78%), C (22%)',
+  },
+
+  {
+    id: 55,
+    question:
+      'You are building an application on Cloud Run that uses Cloud SQL. You want the database to only accept connections from applications in your VPC. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Use public IP with firewall rules and Cloud SQL Auth proxy.',
+      },
+      {
+        label: 'B',
+        text: 'Use public IP with firewall rules and connection pooling.',
+      },
+      {
+        label: 'C',
+        text: 'Use private IP, private service connection, Serverless VPC connector, and Cloud SQL Auth proxy.',
+      },
+      {
+        label: 'D',
+        text: 'Use private IP, private service connection, Serverless VPC connector, and connection pooling.',
+      },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (65%), C (35%)',
+  },
+
+  {
+    id: 56,
+    question:
+      "While troubleshooting Cloud SQL Proxy logs you see the error: 'Error 403: Access Not Configured'. What should you do?",
+    options: [
+      {
+        label: 'A',
+        text: 'Check app.yaml for incorrect instance connection name.',
+      },
+      {
+        label: 'B',
+        text: 'Check if the service account has cloudsql.instances.connect permission.',
+      },
+      { label: 'C', text: 'Enable the Cloud SQL Admin API.' },
+      { label: 'D', text: 'Ensure the instance uses a public IP.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (89%)',
+  },
+
+  {
+    id: 57,
+    question:
+      'You are building a centralized inventory system for 200 stores with 500 GB of data each. You want minimal rollout disruption and automatic scaling up or down during nights and holidays. What should you do?',
+    options: [
+      { label: 'A', text: 'Oracle RAC on Bare Metal Solution.' },
+      { label: 'B', text: 'Sharded Cloud SQL instances.' },
+      { label: 'C', text: 'Bigtable cluster with autoscaling.' },
+      { label: 'D', text: 'Cloud Spanner with custom autoscaling.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (60%), B (40%)',
+  },
+
+  {
+    id: 58,
+    question:
+      'Your organization must track production database rollouts for auditing compliance on Cloud Spanner databases. What should you do?',
+    options: [
+      { label: 'A', text: 'Use replication to roll out changes.' },
+      { label: 'B', text: 'Use backup and restore.' },
+      { label: 'C', text: 'Use Liquibase to manage database changes.' },
+      { label: 'D', text: 'Manually capture DBA audit logs.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (80%), B (20%)',
+  },
+
+  {
+    id: 59,
+    question:
+      'A production Cloud SQL MySQL instance (16 vCPUs, 104 GB RAM) is running at 90-100% CPU. You need to scale up with minimal interruption. What should you do?',
+    options: [
+      { label: 'A', text: 'Run gcloud sql instances patch to increase vCPUs.' },
+      { label: 'B', text: 'Update a MySQL flag to increase vCPUs.' },
+      { label: 'C', text: 'Run gcloud compute instances update.' },
+      { label: 'D', text: 'Backup and restore to a larger instance.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 60,
+    question:
+      'You are configuring Cloud SQL for PostgreSQL with one primary, one standby, and one read replica. What is the recommended high availability configuration?',
+    options: [
+      {
+        label: 'A',
+        text: 'Primary in zone A, standby in zone C, read replica in zone B in the same region.',
+      },
+      { label: 'B', text: 'Primary and standby in zone A, replica in zone B.' },
+      {
+        label: 'C',
+        text: 'Primary in one region, standby in second region, replica in third region.',
+      },
+      { label: 'D', text: 'All instances in zone A.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 61,
+    question:
+      'You run a transactional application on Cloud SQL for PostgreSQL with HA. You want to restore the database to a previous known good state. What should you do?',
+    options: [
+      { label: 'A', text: 'Clone from read replica in the same region.' },
+      { label: 'B', text: 'Clone from read replica in another zone.' },
+      {
+        label: 'C',
+        text: 'Use point-in-time recovery to restore to two hours earlier.',
+      },
+      { label: 'D', text: "Import last week's dump file." },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (89%)',
+  },
+
+  {
+    id: 62,
+    question:
+      'Your organization requires encryption keys with locality control for Cloud SQL PostgreSQL databases and control of the key lifecycle. What should you do?',
+    options: [
+      { label: 'A', text: 'Use Google-managed encryption keys.' },
+      { label: 'B', text: 'Use customer-managed encryption keys.' },
+      {
+        label: 'C',
+        text: 'Encrypt the persistent disk with Google-managed keys.',
+      },
+      {
+        label: 'D',
+        text: 'Encrypt the persistent disk with customer-managed keys.',
+      },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 63,
+    question:
+      'Your viral application uses Cloud SQL MySQL with HDD storage and experiences slow disk performance. What should you do?',
+    options: [
+      {
+        label: 'A',
+        text: 'Export data and import into a new instance with SSD.',
+      },
+      { label: 'B', text: 'Edit the instance and change HDD to SSD.' },
+      { label: 'C', text: 'Create HA instance with SSD and failover.' },
+      { label: 'D', text: 'Create SSD read replica and failover.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
+
+  {
+    id: 64,
+    question:
+      'A new application reads statistics from an existing Cloud Spanner database for dashboards. Following IAM best practices, what should you do?',
+    options: [
+      { label: 'A', text: 'Reuse the existing service account.' },
+      {
+        label: 'B',
+        text: 'Create a new service account with Spanner Admin role.',
+      },
+      {
+        label: 'C',
+        text: 'Create a new service account with Spanner Database Reader role.',
+      },
+      {
+        label: 'D',
+        text: 'Grant spanner.databases.select permission directly.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (83%), B (17%)',
+  },
+
+  {
+    id: 65,
+    question:
+      'Your DevOps team instrumented microservices with Sqlcommenter for Cloud SQL. Some microservice calls are failing and you must find the root cause. What should you do?',
+    options: [
+      { label: 'A', text: 'Monitor Query Insights.' },
+      { label: 'B', text: 'Monitor CPU utilization metrics.' },
+      { label: 'C', text: 'Check Cloud SQL recommenders.' },
+      { label: 'D', text: 'Use Cloud Trace for failing application requests.' },
+    ],
+    correctAnswer: 'D',
+    communityVote: 'D (57%), A (43%)',
+  },
+
+  {
+    id: 66,
+    question:
+      'You are designing a global read-only database for public park information with nightly batch updates. You want an open-source SQL database. What should you use?',
+    options: [
+      { label: 'A', text: 'Bigtable with multi-region clusters.' },
+      { label: 'B', text: 'Memorystore Redis.' },
+      {
+        label: 'C',
+        text: 'Cloud SQL for PostgreSQL with cross-region replicas.',
+      },
+      { label: 'D', text: 'Cloud Spanner multi-region.' },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (100%)',
+  },
+
+  {
+    id: 67,
+    question:
+      'Your company cannot afford planned downtime in December for a Cloud SQL MySQL instance and wants the most cost-effective solution. What should you do?',
+    options: [
+      { label: 'A', text: 'Open a support ticket to prevent maintenance.' },
+      {
+        label: 'B',
+        text: 'Use Cloud SQL maintenance settings to defer maintenance.',
+      },
+      { label: 'C', text: 'Create read replicas in other zones.' },
+      { label: 'D', text: 'Create a regional HA instance.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (100%)',
+  },
+
+  {
+    id: 68,
+    question:
+      'Your Cloud SQL MySQL application requires RTO and RPO in minutes and must survive zonal or regional failures. What architecture should you use?',
+    options: [
+      {
+        label: 'A',
+        text: 'Read replicas in different regions using asynchronous replication.',
+      },
+      {
+        label: 'B',
+        text: 'Read replicas in same region with synchronous replication.',
+      },
+      {
+        label: 'C',
+        text: 'Read replicas in different zones with synchronous replication and cross-region replicas with asynchronous replication.',
+      },
+      {
+        label: 'D',
+        text: 'Different zones async replication and cross-region synchronous replication.',
+      },
+    ],
+    correctAnswer: 'C',
+    communityVote: 'C (50%), A (45%)',
+  },
+
+  {
+    id: 69,
+    question:
+      'Your hotel booking company must isolate PII data in Country A to meet residency requirements while maintaining efficient operations. What multi-tenancy pattern should you use?',
+    options: [
+      { label: 'A', text: 'Schema data management pattern.' },
+      { label: 'B', text: 'Instance data management pattern.' },
+      { label: 'C', text: 'Table data management pattern.' },
+      { label: 'D', text: 'Database data management pattern.' },
+    ],
+    correctAnswer: 'B',
+    communityVote: 'B (65%), D (24%)',
+  },
+
+  {
+    id: 70,
+    question:
+      'Your company wants to use Cloud Spanner with automated scaling to handle increasing traffic and occasional spikes. What should you do?',
+    options: [
+      { label: 'A', text: 'Use linear scaling with Autoscaler architecture.' },
+      { label: 'B', text: 'Use direct scaling with Autoscaler architecture.' },
+      { label: 'C', text: 'Upgrade capacity periodically during maintenance.' },
+      { label: 'D', text: 'Create alerts and manually upgrade capacity.' },
+    ],
+    correctAnswer: 'A',
+    communityVote: 'A (100%)',
+  },
 ];
