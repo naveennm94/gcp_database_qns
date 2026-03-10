@@ -61,7 +61,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className='font-bold text-gray-900 mb-2'>70 Questions</h3>
+                <h3 className='font-bold text-gray-900 mb-2'>182 Questions</h3>
                 <p className='text-gray-600 text-sm'>
                   Comprehensive coverage of all exam topics
                 </p>
@@ -83,7 +83,7 @@ export default function Home() {
                     />
                   </svg>
                 </div>
-                <h3 className='font-bold text-gray-900 mb-2'>1 Hour</h3>
+                <h3 className='font-bold text-gray-900 mb-2'>3 Hours</h3>
                 <p className='text-gray-600 text-sm'>
                   Timed exam simulation with countdown timer
                 </p>

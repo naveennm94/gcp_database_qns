@@ -212,7 +212,7 @@ export default function ExamPage() {
                   <div className='text-3xl font-bold text-purple-600 mb-2'>
                     70%
                   </div>
-                  <div className='text-gray-600 font-medium'>Pass Marks</div>
+                  <div className='text-gray-600 font-medium'>Pass Mark</div>
                 </div>
               </div>
             </div>
